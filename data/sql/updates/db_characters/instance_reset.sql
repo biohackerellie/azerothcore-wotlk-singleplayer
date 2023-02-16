@@ -1,0 +1,104 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               8.0.30 - MySQL Community Server - GPL
+-- Server OS:                    Win64
+-- HeidiSQL Version:             12.3.0.6589
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping structure for table acore_characters.instance_reset
+CREATE TABLE IF NOT EXISTS `instance_reset` (
+  `mapid` smallint unsigned NOT NULL DEFAULT '0',
+  `difficulty` tinyint unsigned NOT NULL DEFAULT '0',
+  `resettime` int unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mapid`,`difficulty`),
+  KEY `difficulty` (`difficulty`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table acore_characters.instance_reset: ~71 rows (approximately)
+INSERT IGNORE INTO `instance_reset` (`mapid`, `difficulty`, `resettime`) VALUES
+	(249, 0, 1676606400),
+	(249, 1, 1676606400),
+	(269, 1, 1676448000),
+	(309, 0, 1676433600),
+	(409, 0, 1676606400),
+	(469, 0, 1676606400),
+	(509, 0, 1676433600),
+	(531, 0, 1676606400),
+	(532, 0, 1676606400),
+	(533, 0, 1676606400),
+	(533, 1, 1676606400),
+	(534, 0, 1676606400),
+	(540, 1, 1676448000),
+	(542, 1, 1676448000),
+	(543, 1, 1676448000),
+	(544, 0, 1676606400),
+	(545, 1, 1676448000),
+	(546, 1, 1676448000),
+	(547, 1, 1676448000),
+	(548, 0, 1676606400),
+	(550, 0, 1676606400),
+	(552, 1, 1676448000),
+	(553, 1, 1676448000),
+	(554, 1, 1676448000),
+	(555, 1, 1676448000),
+	(556, 1, 1676448000),
+	(557, 1, 1676448000),
+	(558, 1, 1676448000),
+	(560, 1, 1676448000),
+	(564, 0, 1676606400),
+	(565, 0, 1676606400),
+	(568, 0, 1676433600),
+	(574, 1, 1676448000),
+	(575, 1, 1676448000),
+	(576, 1, 1676448000),
+	(578, 1, 1676448000),
+	(580, 0, 1676606400),
+	(585, 1, 1676448000),
+	(595, 1, 1676448000),
+	(598, 1, 1676448000),
+	(599, 1, 1676448000),
+	(600, 1, 1676448000),
+	(601, 1, 1676448000),
+	(602, 1, 1676448000),
+	(603, 0, 1676606400),
+	(603, 1, 1676606400),
+	(604, 1, 1676448000),
+	(608, 1, 1676448000),
+	(615, 0, 1676606400),
+	(615, 1, 1676606400),
+	(616, 0, 1676606400),
+	(616, 1, 1676606400),
+	(619, 1, 1676448000),
+	(624, 0, 1676606400),
+	(624, 1, 1676606400),
+	(631, 0, 1676606400),
+	(631, 1, 1676606400),
+	(631, 2, 1676606400),
+	(631, 3, 1676606400),
+	(632, 1, 1676448000),
+	(649, 0, 1676606400),
+	(649, 1, 1676606400),
+	(649, 2, 1676606400),
+	(649, 3, 1676606400),
+	(650, 1, 1676448000),
+	(658, 1, 1676448000),
+	(668, 1, 1676448000),
+	(724, 0, 1676606400),
+	(724, 1, 1676606400),
+	(724, 2, 1676606400),
+	(724, 3, 1676606400);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

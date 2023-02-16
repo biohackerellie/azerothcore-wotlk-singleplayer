@@ -1,0 +1,94 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               8.0.30 - MySQL Community Server - GPL
+-- Server OS:                    Win64
+-- HeidiSQL Version:             12.3.0.6589
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping structure for table acore_characters.pet_spell_cooldown
+CREATE TABLE IF NOT EXISTS `pet_spell_cooldown` (
+  `guid` int unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier, Low part',
+  `spell` mediumint unsigned NOT NULL DEFAULT '0' COMMENT 'Spell Identifier',
+  `category` mediumint unsigned NOT NULL DEFAULT '0',
+  `time` int unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`guid`,`spell`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table acore_characters.pet_spell_cooldown: ~61 rows (approximately)
+INSERT IGNORE INTO `pet_spell_cooldown` (`guid`, `spell`, `category`, `time`) VALUES
+	(9, 1784, 38, 1675214362),
+	(9, 1785, 38, 1675214362),
+	(9, 1786, 38, 1675214362),
+	(9, 1787, 38, 1675214362),
+	(9, 3477, 38, 1675214362),
+	(9, 5102, 38, 1675214362),
+	(9, 5215, 38, 1675214362),
+	(9, 5707, 38, 1675214362),
+	(9, 5916, 38, 1675214362),
+	(9, 6634, 38, 1675214362),
+	(9, 6783, 38, 1675214362),
+	(9, 7104, 38, 1675214362),
+	(9, 7823, 38, 1675214362),
+	(9, 7825, 38, 1675214362),
+	(9, 7826, 38, 1675214362),
+	(9, 7974, 38, 1675214362),
+	(9, 8082, 38, 1675214362),
+	(9, 8083, 38, 1675214362),
+	(9, 8085, 38, 1675214362),
+	(9, 8152, 38, 1675214362),
+	(9, 8218, 38, 1675214362),
+	(9, 8822, 38, 1675214362),
+	(9, 8874, 38, 1675214362),
+	(9, 9913, 38, 1675214362),
+	(9, 10032, 38, 1675214362),
+	(9, 11013, 38, 1675214362),
+	(9, 15956, 38, 1675214362),
+	(9, 16122, 38, 1675214362),
+	(9, 18985, 38, 1675214362),
+	(9, 24301, 38, 1675214362),
+	(9, 24450, 38, 1675214362),
+	(9, 24452, 38, 1675214362),
+	(9, 24453, 38, 1675214362),
+	(9, 29921, 38, 1675214362),
+	(9, 30831, 38, 1675214362),
+	(9, 30991, 38, 1675214362),
+	(9, 31260, 38, 1675214362),
+	(9, 31308, 38, 1675214362),
+	(9, 31519, 38, 1675214362),
+	(9, 31526, 38, 1675214362),
+	(9, 32199, 38, 1675214362),
+	(9, 32615, 38, 1675214362),
+	(9, 34189, 38, 1675214362),
+	(9, 35347, 38, 1675214362),
+	(9, 36071, 38, 1675214362),
+	(9, 36313, 38, 1675214362),
+	(9, 36424, 38, 1675214362),
+	(9, 37875, 38, 1675214362),
+	(9, 41452, 38, 1675214362),
+	(9, 41453, 38, 1675214362),
+	(9, 42347, 38, 1675214362),
+	(9, 42866, 38, 1675214362),
+	(9, 42932, 38, 1675214362),
+	(9, 42943, 38, 1675214362),
+	(9, 47032, 38, 1675214362),
+	(9, 58506, 38, 1675214362),
+	(9, 59045, 38, 1675214362),
+	(9, 59188, 38, 1675214362),
+	(9, 59731, 38, 1675214362),
+	(9, 70287, 38, 1675214362),
+	(9, 71435, 38, 1675214362);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
